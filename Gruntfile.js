@@ -46,8 +46,7 @@ module.exports = function (grunt) {
         esnext: true,
         browser: false,
         node: true,
-        quotmark: 'single',
-        globals: {}
+        quotmark: 'single'
       }
     },
     nodewebkit: {
