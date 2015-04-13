@@ -1,0 +1,27 @@
+{
+  "name": "low-level-develoepr-tools",
+  "version": "0.1.0",
+  "description": "저수준 개발자 도구",
+  "main": "index.html",
+  "private": "true",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://mintrupt@github.com/eattle/low-level-developer-tools.git"
+  },
+  "author": "류형욱 <mintrupt@mintrupt.com> (Hyeonguk Ryu)",
+  "license": "Proprietary",
+  "bugs": {
+    "url": "https://github.com/eattle/low-level-developer-tools/issues"
+  },
+  "homepage": "https://github.com/eattle/low-level-developer-tools",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-mocha-test": "*",
+    "grunt-contrib-jshint": "*",
+    "mocha": "*",
+    "grunt-node-webkit-builder": "*"
+  }
+}

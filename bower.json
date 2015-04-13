@@ -1,0 +1,21 @@
+{
+  "name": "low-level-developer-tools",
+  "private": "true",
+  "version": "0.1.0",
+  "homepage": "https://github.com/eattle/low-level-developer-tools",
+  "authors": [
+    "류형욱 <mintrupt@mintrupt.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~3.6.0",
+    "sweetalert": "~0.5.0",
+    "angular": "~1.3.15"
+  }
+}
