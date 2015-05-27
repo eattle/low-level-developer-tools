@@ -17,10 +17,15 @@
   },
   "homepage": "https://github.com/eattle/low-level-developer-tools",
   "devDependencies": {
+    "mocha": "*",
     "grunt": "*",
     "grunt-mocha-test": "*",
     "grunt-contrib-jshint": "*",
-    "mocha": "*",
-    "grunt-node-webkit-builder": "*"
+    "grunt-node-webkit-builder": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-jade": "*",
+    "grunt-contrib-stylus": "*",
+    "grunt-contrib-uglify": "*"
   }
 }
