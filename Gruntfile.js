@@ -116,6 +116,16 @@ module.exports = function (grunt) {
     },
     clean: {
       src: ['app/*', '!app/bower_components/**', '!app/package.json']
+    },
+    copy: {
+      public: {
+        files: [{
+          cwd: 'src/public',
+          expand: true,
+          src: ['**'],
+          dest: 'app'
+        }]
+      }
     }
   });
 
@@ -128,8 +138,9 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-stylus');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('common', ['clean', 'jshint', 'concat', 'uglify', 'jade', 'stylus']);
+  grunt.registerTask('common', ['clean', 'jshint', 'concat', 'uglify', 'jade', 'stylus', 'copy:public']);
 
   // Default task.
   grunt.registerTask('default', ['test', 'common', 'nodewebkit']);

@@ -29,3 +29,7 @@ node_modules
 # NW.js
 /cache
 /webkitbuilds
+
+/app
+!app/bower_components
+!app/package.json
