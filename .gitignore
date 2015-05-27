@@ -30,6 +30,8 @@ node_modules
 /cache
 /webkitbuilds
 
-/app
-!app/bower_components
-!app/package.json
+!/app/
+/app/*
+!/app/bower_components
+!/app/package.json
+

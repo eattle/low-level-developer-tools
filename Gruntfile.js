@@ -115,7 +115,8 @@ module.exports = function (grunt) {
       src: ['./app/**/*']
     },
     clean: {
-      src: ['app/*', '!app/bower_components/**', '!app/package.json']
+      before: ['app/*', '!app/bower_components/**', '!app/package.json'],
+      after: ['app/bower_components/angular-i18n/*', '!app/bower_components/angular-i18n/*ko-kr.js']
     },
     copy: {
       public: {
@@ -140,7 +141,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('common', ['clean', 'jshint', 'concat', 'uglify', 'jade', 'stylus', 'copy:public']);
+  grunt.registerTask('common', ['clean:before', 'jshint', 'concat', 'uglify', 'jade', 'stylus', 'copy:public', 'clean:after']);
 
   // Default task.
   grunt.registerTask('default', ['test', 'common', 'nodewebkit']);
