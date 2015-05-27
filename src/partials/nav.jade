@@ -1,0 +1,19 @@
+.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand.logo(ui-sref='lldt.home')
+        strong Eattle 저수준 개발자 도구
+    .navbar-collapse.collapse
+      ul.nav.navbar-nav
+        li(ui-sref-active='active')
+          a(ui-sref='lldt.home') 홈
+        li(ui-sref-active='active')
+          a(ui-sref='lldt.doc') 개발 문서
+        li(ui-sref-active='active')
+          a(ui-sref='lldt.format') 장치 포맷
+  .strip
