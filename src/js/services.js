@@ -15,12 +15,4 @@ angular.module('lldtApp.services', [])
       callback(null, false);
     });
   }
-})
-
-.factory('HomeService', ['$http', function ($http) {
-  return {
-    people: function () {
-      return $http.get('people');
-    }
-  };
-}]);
+});
