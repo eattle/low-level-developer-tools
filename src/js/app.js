@@ -11,7 +11,7 @@ angular.module('lldtApp',
 )
 
 .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
-  
+
   $stateProvider
     .state('lldt', {
       url: '',
