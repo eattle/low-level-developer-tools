@@ -12,9 +12,14 @@ html(lang='ko')
     link(rel='stylesheet', href='styles/lldt.css')
     link(rel='stylesheet', href='styles/root.css')
   body(ng-app='lldtApp')
-    div(ui-view)
-      .root
-        h1 Eattle 저수준 개발자 도구
+    div(ng-controller='PermissionController')
+      div(ng-if='!isRoot')
+        .root
+          h1 Eattle 저수준 개발자 도구
+        p.permission-message {{ message }}
+      div(ng-if='isRoot', ui-view)
+        .root
+          h1 Eattle 저수준 개발자 도구
     span.glyphicon.glyphicon-refresh(style='opacity: 0')
     script(src='bower_components/jquery/dist/jquery.min.js')
     script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
@@ -26,4 +31,4 @@ html(lang='ko')
     script(src='bower_components/moment/min/moment-with-locales.min.js')
     script(src='bower_components/lodash/lodash.min.js')
     script(src='bower_components/sweetalert/dist/sweetalert.min.js')
-    script(src='scripts.min.js')
+    script(src='scripts.js')
