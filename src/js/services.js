@@ -7,7 +7,6 @@ angular.module('lldtApp.services', [])
   function isRoot(callback) {
     const fs = require('fs');
     fs.open('/etc/sudoers', 'r', function (err, fd) {
-      console.log(err, fd);
       if (fd !== undefined) {
         fs.close(fd);
         return callback(null, true);
